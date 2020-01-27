@@ -6,7 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
-  constructor() {}
-
+  hideMe: boolean;
+  constructor() {
+    this.hideMe = false;
+  }
+  Hideme(){
+    if (this.hideMe) {this.hideMe = false;}
+    else {this.hideMe = true;} 
+  }
 }

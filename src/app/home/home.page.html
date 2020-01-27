@@ -11,34 +11,218 @@
 
 <ion-content>
     <ion-card class="welcome-card">
-      <img src="/assets/shapes.svg" alt="" />
+      <img src="/assets/imgs/charts-graphs-header.jpg" alt="" />
+        
       <ion-card-header>
         <ion-card-subtitle>Get Started</ion-card-subtitle>
-        <ion-card-title>Welcome to Ionic</ion-card-title>
+        <ion-card-title>Welcome to Charts and Graphs</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
+        <p>Supplementary content for ELT001</p>
       </ion-card-content>
     </ion-card>
-    <ion-list lines="none">
-      <ion-list-header>
-        <ion-label>Resources</ion-label>
-      </ion-list-header>
-      <ion-item href="https://ionicframework.com/docs/">
-        <ion-icon slot="start" color="medium" name="book"></ion-icon>
-        <ion-label>Ionic Documentation</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/building/scaffolding">
-        <ion-icon slot="start" color="medium" name="build"></ion-icon>
-        <ion-label>Scaffold Out Your App</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/layout/structure">
-        <ion-icon slot="start" color="medium" name="grid"></ion-icon>
-        <ion-label>Change Your App Layout</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/theming/basics">
-        <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
-        <ion-label>Theme Your App</ion-label>
-      </ion-item>
-    </ion-list>
+
+    <ion-card>
+        <ion-card-header>
+          <ion-text color="primary"><h5>An important note:</h5></ion-text>
+        </ion-card-header>
+        <ion-card-content>
+        <ion-text class="wordwrap">
+        When describing using the format <ion-text color="dark">"From A to B, the price of Toyota cars ______(verb)"</ion-text>. Do not use the present-simple tense form of the verb, ie:</ion-text><br/><br/>
+        <ion-text class="wordwrap">
+            - From Monday to Tuesday, the price of Toyota cars <ion-text color="dark">go up</ion-text>.
+        </ion-text><br/><br/>
+        <ion-text class="wordwrap">
+            Instead, you should be using the past-simple tense as we are describing an action that has already taken place. For example:
+        </ion-text><br/><br/>
+        <ion-text class="wordwrap">
+            - From Monday to Tuesday, the price of Toyota cars <ion-text color="dark">went up</ion-text>. (go is the present-simple form of went)
+        </ion-text>
+
+
+      </ion-card-content>
+      </ion-card>
+
+  
+    <ion-card>
+      <ion-card-header>
+        <ion-text color="primary"><h5>How to describe a Line Graph:</h5></ion-text>
+      </ion-card-header>
+      <ion-card-content>
+        
+      <ion-text class="wordwrap">1.) Say what the line graph is about (ex: This line graph is about cars)</ion-text><br/>
+      <ion-text class="wordwrap">2.) Describe the trend of the line graph. The trend is a main idea (ex: Toyota  cars are volatile in price over the years)</ion-text><br/>
+      <ion-text class="wordwrap">3.) Talk about the changes occurring between periods of time 
+          (ex: From 2011 to 2012 Toyoto cars rose in price from 13,000$ to 14,000$, From 2012 to 2013 etc...)</ion-text><br/>
+      <ion-text class="wordwrap">4.) Finish your explanation by making a conclusion about the graph.
+            (ex: In conclusion, Toyota cars are volatile in price at a maximum of 16,000$ to a minimum of 5,000$)</ion-text><br/><br/>
+            <!--ion-button size="small" (click)="Hideme()">Translation</ion-button-->
+      </ion-card-content>
+    </ion-card>
+
+    
+
+    <ion-card *ngIf="hideMe">
+      <ion-card-header>
+        <h5>:كيف تصف مخطط خطي</h5>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-text class="wordwrap">1.) صف عن ماذا يتحدث المخطط</ion-text><br/>
+        <ion-text class="wordwrap">2.) صف نزعة المخطط, النزعة فكرة رئيسية</ion-text><br/>
+        <ion-text class="wordwrap">3.) تكلم عن التغيرات التي تحدث في الفترات الزمنية</ion-text><br/>
+        <ion-text class="wordwrap">4.) انهي شرحك بتكوين ملخص عن المخطط</ion-text>
+      </ion-card-content>
+    </ion-card>
+
+
+
+    <ion-card>
+      <ion-card-header>
+        <!----ion-card-subtitle>Regular HTML block</ion-card-subtitle-->
+        <ion-text color="primary"><h5>Example of how to describe a Line Graph: What is the price of Apples over time?</h5></ion-text>
+      </ion-card-header>
+      <img src="/assets/imgs/linegraphex1.png" alt="" />
+      <ion-card-content>
+        <ion-text color="primary">
+            <h2>Trend:</h2>
+        </ion-text>
+      <ion-text color="dark" class="wordwrap">
+            
+           The overall trend of this graph shows that Apples <u>rise</u> at 3 dollars maxiumum  and <u>lower</u> 2 dollars minimum in price
+            
+      </ion-text>
+
+      <ion-text color="primary">
+          <h2>Description:</h2>
+      </ion-text>
+      <ion-text color="dark" class="wordwrap">
+        
+          
+              This Line Graph is about the price of Apples.
+              From monday to tuesday the price of Apples rose from 1 to 2 dollars.
+              From tuesday to wednesday it stayed at 2 dollars.
+              From wednesday to thursday it went up from 2 to 3 dollars.
+              Finally from thursday to friday it fell from 3 to 2 dollars.
+        
+       
+      </ion-text>
+     
+
+
+      <ion-text color="primary">
+        <h2>Conclusion:</h2>
+      </ion-text>
+      <ion-text color="dark" class="wordwrap">
+        
+          In conclusion, the price of Apples from monday to friday is stable. 
+        
+      </ion-text>
+      </ion-card-content>
+    </ion-card>
+
+
+    
+
+
+
+    <ion-card>
+        <ion-card-header>
+          <ion-text color="primary"><h5>How to describe a Pie Chart:</h5></ion-text>
+        </ion-card-header>
+        <ion-card-content>
+        <ion-text class="wordwrap">1.) Say what the chart is about (ex: This chart is about cars)</ion-text><br/>
+        <ion-text class="wordwrap">2.) Describe the trend of the chart. The trend is a main idea (ex: This chart shows that people like Toyota cars the most)</ion-text><br/>
+        <ion-text class="wordwrap">3.) Talk first about the biggest item on the pie chart (ex: Toyota cars are the biggest at 75%)</ion-text><br/>
+        <ion-text class="wordwrap">4.) Talk in descending order about the other items on the pie chart (ex: Next Honda is at 20%. Finally Hyundai the smallest is at 5%)</ion-text><br/>
+        <ion-text class="wordwrap">5.) Finish your explanation by making a conclusion or short summary about the chart.
+            (ex: In conclusion, Toyota cars are the most popular and Hyundai cars are the least popular) </ion-text> <br/><br/>
+        <!--ion-button size="small" (click)="Hideme()">Translation</ion-button-->
+        </ion-card-content>
+      </ion-card>
+
+
+  
+    <ion-card *ngIf="hideMe">
+      <ion-card-header>
+        <h5>:كيف تصف المخطط الدائري</h5>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-text class="wordwrap">1.)صف مايتحدث عنه المخطط (مثال: هذا المخطط عن السيارات</ion-text><br/>
+        <ion-text class="wordwrap">2.)صف نزعة المخطط. النزعة فكرة رئيسية (مثال:تبعا لهذا المخطط أكثر نوع سيارات يحبه الناس هو سيارات تويوتا</ion-text><br/>
+        <ion-text class="wordwrap">3.)%ابدأ بالنقطة الأكبر في المخطط (مثال:سيارات تويوتا هي الأكبر وحاصلة على نسبة 75</ion-text><br/>
+        <ion-text class="wordwrap">4.) %تكلم عن جميع النقاط بترتيب تنازلي (مثال:سيارات هوندا تأتي تاليا بنسبة 20%. أخيرا هيونداي هي الأقل بنسبة 5</ion-text><br/>
+        <ion-text class="wordwrap">5.) انهي شرحك بتكوين ملخص عن المخطط (مثال:في الختام, سيارات تويوتا هي الأشهر وهيونداي هي الأقل شهرة
+          </ion-text>
+      </ion-card-content>
+    </ion-card>
+
+
+
+
+ <ion-card>
+      <ion-card-header>
+        <!----ion-card-subtitle>Regular HTML block</ion-card-subtitle-->
+        <ion-text color="primary"><h5>Example of how to describe a Pie Chart: What fruits do people like?</h5></ion-text>
+      </ion-card-header>
+      <img src="/assets/imgs/piechartex1.png" alt="" />
+      <ion-card-content>
+        <ion-text color="primary">
+            <h2>Trend:</h2>
+        </ion-text>
+      <ion-text color="dark">
+            <ion-row>
+            <p class="wordwrap">The overall trend of this pie chart shows that people like Apples. Apples are the most popular fruit.</p>
+            </ion-row>
+      </ion-text>
+
+      <ion-text color="primary">
+          <h2>Description:</h2>
+      </ion-text>
+      <ion-text color="dark">
+        <ion-row>
+          <ion-text class="wordwrap">
+              This Pie chart is about the popularity of Fruit. 
+              The biggest is Apple, it is at fifty seven point one percent.
+              Next is Orange at twenty eight point six percent. Finally, the smallest is Pineapple at fourteen point three percent.
+          </ion-text>
+        </ion-row>
+      </ion-text>
+      
+      <ion-text color="primary">
+          <h2>Conclusion:</h2>
+        </ion-text>
+        <ion-text color="dark" class="wordwrap">
+        
+            In conclusion, everyone likes Apples and nobody likes Pineapple. 
+          
+        </ion-text>
+
+      </ion-card-content>
+    </ion-card>
+    
+
+    
+    <ion-card>
+        <ion-card-header>
+          <ion-text color="primary"><h5>How to describe a Bar graph:</h5></ion-text>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-text class="wordwrap"> There are two types of Bar graphs. The first type of bar graph, <ion-text color="dark">Type A</ion-text> contains information or data similar to that of 
+              a pie-chart but doesn't use percentage to show the proportion of one item to another. This type of bar graph is commonly used to 
+              make comparisons between different items by visually contrasting data values between different items. For this type of bar graph you would describe it like a pie-chart. </ion-text><br/><br/>
+          <img src="/assets/imgs/bar-graphA.png" alt="" />
+          <ion-text class="wordwrap">The second type of bar graph <ion-text color="dark">Type B</ion-text> is similar to that of a line-graph by plotting the variation of data in a set of members of the graph over a specified
+              period of time. This type of graph is commonly used to show the trend of an item or items through the use of bars instead of lines over a duration of time. For this type of bar-graph you would describe it like a line-graph.</ion-text><br/><br/>
+          <img src="/assets/imgs/bar-graphB.png" alt="" />
+        </ion-card-content>
+      </ion-card>
+  
+
+    <!-- adding blank space-->
+
+    
+  
+   
 </ion-content>

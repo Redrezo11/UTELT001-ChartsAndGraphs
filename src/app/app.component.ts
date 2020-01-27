@@ -17,10 +17,40 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'List',
+      title: 'Pie Chart Exercises',
       url: '/list',
       icon: 'list'
+    },
+
+    {
+      title: 'Line Graph Exercises',
+      url: '/linegraph',
+      icon: 'list'
+    },
+    {
+      title: 'Templates',
+      url: '/templates',
+      icon: 'list'
+    },
+
+    {
+      title: 'Comparitives',
+      url: '/comparative',
+      icon: 'list'
+    },
+
+    {
+      title: 'Graph Compare',
+      url: '/graphcompare',
+      icon: 'list'
+    },
+    {
+      title: 'Resources',
+      url: '/resources',
+      icon: 'list'
     }
+    
+
   ];
 
   constructor(

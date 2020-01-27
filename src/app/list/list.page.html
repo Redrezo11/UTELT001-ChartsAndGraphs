@@ -4,13 +4,55 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>
-      List
+      Charts and Graphs: Exercises
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
+
+    <ion-card-header>
+        <!----ion-card-subtitle>Regular HTML block</ion-card-subtitle-->
+        <ion-text color="primary">
+          <div text-center><h5>Pie Chart Exercises</h5></div>
+        </ion-text>
+      </ion-card-header>
+      <ion-card-content><ion-text color="medium">
+          <p>Various questions can be asked during these exercises. What is the amount of X? Or what is the popularity of X?</p>
+        </ion-text></ion-card-content>
+      
+        <ion-card-content>
+            <ion-text color="danger">
+                <h5>Exercise A</h5>
+            </ion-text>
+        </ion-card-content>
+    <img src="/assets/imgs/ExPiechartA.png" alt="" />
+     
+    <ion-card-content>
+        <ion-text color="danger">
+            <h5>Exercise B</h5>
+        </ion-text>
+    </ion-card-content>
+    <img src="/assets/imgs/ExAsiancarB.png" alt="" />
+      
+
+    <ion-card-content>
+        <ion-text color="danger">
+            <h5>Exercise C</h5>
+        </ion-text>
+    </ion-card-content>
+    <img src="/assets/imgs/ExPiechartL.png" alt="" />
+      
+    <ion-card-content>
+        <ion-text color="danger">
+            <h5>Exercise D</h5>
+        </ion-text>
+    </ion-card-content>
+    <img src="/assets/imgs/ExPiechartD.png" alt="" />
+      
+
+
+  <!--ion-list>
     <ion-item *ngFor="let item of items">
       <ion-icon [name]="item.icon" slot="start"></ion-icon>
       {{item.title}}
@@ -18,7 +60,7 @@
         {{item.note}}
       </div>
     </ion-item>
-  </ion-list>
+  </ion-list-->
   <!--
     <div *ngIf="selectedItem" padding>
       You navigated here from <b>{{selectedItem.title }}</b>

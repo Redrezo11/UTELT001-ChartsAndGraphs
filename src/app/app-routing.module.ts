@@ -14,7 +14,12 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
-  }
+  },
+  { path: 'linegraph', loadChildren: './linegraph/linegraph.module#LinegraphPageModule' },
+  { path: 'templates', loadChildren: './templates/templates.module#TemplatesPageModule' },
+  { path: 'resources', loadChildren: './resources/resources.module#ResourcesPageModule' },
+  { path: 'graphcompare', loadChildren: './graphcompare/graphcompare.module#GraphcomparePageModule' },
+  { path: 'comparative', loadChildren: './comparative/comparative.module#ComparativePageModule' }
 ];
 
 @NgModule({

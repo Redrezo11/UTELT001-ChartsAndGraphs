@@ -1,0 +1,233 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Comparitive: Exercises
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--div>Hello</div>
+  <ion-text>
+    Will you let me be your hero? <ion-input type="text" placeholder="Enter Input" ></ion-input>
+  </ion-text>
+
+  <input type="radio" name="gender" value="male"> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> 
+
+
+  <input type="text" placeholder="testing" size="4" [(ngModel)]="hello"><ion-text color="primary" *ngIf="test2">correct!</ion-text>
+
+  <button type="button" (click)="checkQ1()" >check!</button>
+  <div *ngIf="test">Test variable tripped to true!</div>
+  <div *ngIf="test2">ngModel works for input text and submit</div-->
+
+
+    <ion-card>
+      <ion-card-header>
+        <ion-text color="primary"><h5>Some examples for a single Graph/Chart:</h5></ion-text>
+      </ion-card-header>
+      <ion-card-content>
+      <ion-text color="dark">
+          Apples = 10 <br/>
+          Orange = 6 <br/>
+          Pineapple = 4 <br/>
+      </ion-text><br/>
+
+
+      <ion-text class="wordwrap">
+          1.) There are more Apples than Oranges / There are 5 more Apples than Oranges.</ion-text><br/>
+      <ion-text class="wordwrap">
+          2.) There are  more Oranges than Pineapples / There are 2 more Oranges than Pineapples.</ion-text><br/>
+      <ion-text class="wordwrap">
+          3.) There are less Oranges than Apples / There are 5 less Oranges than Apples.</ion-text><br/>
+      <ion-text class="wordwrap">
+          4.) There are less Pineapples than Oranges / There are 2 less Pineapples than Oranges.</ion-text>
+    </ion-card-content>
+    </ion-card>
+
+    
+    <ion-card>
+        <ion-card-header>
+          <ion-text color="primary"><h5>Some examples for 2  Graphs / Charts:</h5></ion-text>
+        </ion-card-header>
+        <ion-card-content>
+        <ion-text color="dark">
+          John's store: <br/><br/>
+          Apples = 10     price = 4 SR<br/>
+          Oranges = 6     price = 2 SR<br/>
+          Pineapples = 4  price = 6 SR<br/>
+        </ion-text><br/>
+
+        <ion-text color="dark">
+            Mike's store: <br/><br/>
+            Apples = 5     price = 5 SR<br/>
+            Oranges = 3     price = 3 SR<br/>
+            Pineapples = 1  price = 7 SR<br/>
+          </ion-text><br/>
+
+        
+        <ion-text class="wordwrap">
+            1.) There are more Apples in John's store than in Mike's store / 
+            The price of Apples in John's store is less expensive than in Mike's store.</ion-text><br/>
+        <ion-text class="wordwrap">
+            2.) There are less Oranges in Mike's store than in John's store  /
+    The price of Oranges in Mike's store is more expensive than in John's store.</ion-text><br/>
+        <ion-text class="wordwrap">
+            3.) There are 3 more Pineapples in Mike's store than in John's store /
+    The price of Pineapples in Mike's store is 1 SR less than in John's store.</ion-text><br/>
+      </ion-card-content>
+      </ion-card><br/><br/>
+
+
+
+    <ion-card>
+      <ion-card-header>
+      <ion-text color="primary"><h5>Exercise: Hateem and King Omar's stores</h5></ion-text>
+    </ion-card-header>
+
+      <ion-card-content>
+          <img src="/assets/imgs/bar-graphHateem.png" alt="" />
+          <img src="/assets/imgs/bar-graphKingOmar.png" alt="" >    
+
+          <!--input type="text" placeholder="testing" size="4" [(ngModel)]="hello"><ion-text color="primary" *ngIf="test2">correct!</ion-text-->
+          
+          <br/>
+          <ion-text><ion-text color="dark">Important note</ion-text>: Answers are <ion-text color="dark">case-sensitive</ion-text> and one word only</ion-text><br/><br/>
+    
+          <ion-text class="wordwrap">
+              1.) There are <ion-text color="dark"><input type="text" size="4" [(ngModel)]="answer[0]"></ion-text>
+              apples in Hateem's store <ion-text color="dark"><input type="text"  size="4" [(ngModel)]="answer2[0]"></ion-text> in King Omar's store. 
+          </ion-text>
+          <button type="button" (click)="checkQ1()" >check!</button>
+          &nbsp;
+          <ion-text color="primary" *ngIf="q[0]">correct!</ion-text><ion-text color="danger" *ngIf="qi[0]">false!</ion-text><br/><br/>
+
+          <ion-text class="wordwrap">
+              2.) There are <ion-text color="dark"><input type="text"  size="4" [(ngModel)]="answer[1]"></ion-text>
+              oranges in King Omar's store <ion-text color="dark"><input type="text"  size="4" [(ngModel)]="answer2[1]"></ion-text> in Hateem's store. 
+          </ion-text>
+          <button type="button" (click)="checkQ2()" >check!</button>
+          &nbsp;
+          <ion-text color="primary" *ngIf="q[1]">correct!</ion-text><ion-text color="danger" *ngIf="qi[1]">false!</ion-text><br/><br/>
+
+          <ion-text class="wordwrap">
+              3.) There are <ion-text color="dark"><input type="text" size="4" [(ngModel)]="answer[2]"></ion-text>
+              pineapples in Hateem's store <ion-text color="dark"><input type="text" size="4" [(ngModel)]="answer2[2]"></ion-text> in King Omar's store. 
+          </ion-text>
+          <button type="button" (click)="checkQ3()" >check!</button>
+          &nbsp;
+          <ion-text color="primary" *ngIf="q[2]">correct!</ion-text><ion-text color="danger" *ngIf="qi[2]">false!</ion-text><br/><br/>
+
+
+          <ion-text class="wordwrap">
+              4.) These two bar-graphs are about <ion-text color="dark"><input type="text" size="4" [(ngModel)]="answer[3]"></ion-text>
+              in Hateem's and King Omar's <ion-text color="dark"><input type="text" size="4" [(ngModel)]="answer2[3]"></ion-text>. 
+          </ion-text>
+          <button type="button" (click)="checkQ4()" >check!</button>
+          &nbsp;
+          <ion-text color="primary" *ngIf="q[3]">correct!</ion-text><ion-text color="danger" *ngIf="qi[3]">false!</ion-text><br/><br/>
+
+
+          <ion-text class="wordwrap">
+             5.) The <ion-text color="dark"><input type="text" size="4" [(ngModel)]="answer[4]"></ion-text>
+              shows that there are more  <ion-text color="dark"><input type="text" size="4" [(ngModel)]="answer2[4]"></ion-text> in Hateem's store than in King Omar's store. 
+          </ion-text>
+          <button type="button" (click)="checkQ5()" >check!</button>
+          &nbsp;
+          <ion-text color="primary" *ngIf="q[4]">correct!</ion-text><ion-text color="danger" *ngIf="qi[4]">false!</ion-text><br/><br/>
+      </ion-card-content>
+
+    </ion-card>
+
+
+      <ion-card>
+        <ion-card-header>
+            <ion-text color="primary"><h5>Exercise:  Abdullah and Amer's store</h5></ion-text><br/>
+        </ion-card-header>
+          <img src="/assets/imgs/bar-graphAbdullah.png" alt="" />
+          <img src="/assets/imgs/bar-graphAmer.png" alt="" />
+
+          
+           
+         
+
+          <ion-card-content>
+            <ion-text color="dark"><h3> What trend(s) do you see?:</h3></ion-text><br/>
+
+            <div>
+            <input type="radio" id="1a" [(ngModel)]="drone[0]" value="a1"
+                   checked>
+            <label for="1a">The trend shows that all Iphone models in Abdullah's store is more expensive than Amer's store </label>
+          </div>
+          
+          <div>
+            <input type="radio" id="1b" [(ngModel)]="drone[0]" value="b1">
+            <label for="1b">The trend shows that all Iphone models in Amer's store is more expensive than Abdullah's store</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="1c" [(ngModel)]="drone[0]" value="c1">
+            <label for="1c">None</label>
+          </div><br/>
+
+          <button type="button" (click)="checkQM1()" >check!</button>
+          &nbsp;
+          <ion-text color="primary" *ngIf="d[0]">correct!</ion-text><ion-text color="danger" *ngIf="di[0]">false!</ion-text><br/><br/>
+
+          <ion-text color="dark"><h3> What is your conclusion?:</h3></ion-text><br/>
+  
+
+          <div>
+            <input type="radio" id="2a" [(ngModel)]="drone[1]" value="a2"
+                   checked>
+            <label for="2a">In conclusion, I think people would prefer Amer's store more than Abdullah's store  </label>
+          </div>
+          
+          <div>
+            <input type="radio" id="2b" [(ngModel)]="drone[1]" value="b2">
+            <label for="2b">In conclusion, I think people would not prefer Abdulla's store more than Amer's store</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="2c" [(ngModel)]="drone[1]" value="c2">
+            <label for="2c">None</label>
+          </div><br/>
+
+          <button type="button" (click)="checkQM2()" >check!</button>
+          &nbsp;
+          <ion-text color="primary" *ngIf="d[1]">correct!</ion-text><ion-text color="danger" *ngIf="di[1]">false!</ion-text><br/><br/>
+
+
+
+
+
+          <div>
+            <input type="radio" id="3a" [(ngModel)]="drone[2]" value="a3"
+                   checked>
+            <label for="3a">In conclusion, I think people would not prefer Abdullah's store more than Amer's store  </label>
+          </div>
+          
+          <div>
+            <input type="radio" id="3b" [(ngModel)]="drone[2]" value="b3">
+            <label for="3b">In conclusion, I think people would prefer Amer's store less than Abdullah's store</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="3c" [(ngModel)]="drone[2]" value="c3">
+            <label for="3c">None</label>
+          </div><br/>
+
+          <button type="button" (click)="checkQM3()" >check!</button>
+          &nbsp;
+          <ion-text color="primary" *ngIf="d[2]">correct!</ion-text><ion-text color="danger" *ngIf="di[2]">false!</ion-text><br/><br/>
+      </ion-card-content>
+       </ion-card>
+  
+
+</ion-content>
+
