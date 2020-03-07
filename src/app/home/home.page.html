@@ -18,7 +18,7 @@
         <ion-card-title>Welcome to Charts and Graphs</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <p>Supplementary content for ELT001</p>
+        <p>Supplementary content for ELT001 and ECE001</p>
       </ion-card-content>
     </ion-card>
 
@@ -38,9 +38,27 @@
         <ion-text class="wordwrap">
             - From Monday to Tuesday, the price of Toyota cars <ion-text color="dark">went up</ion-text>. (go is the present-simple form of went)
         </ion-text>
-
+        <br/><br/>
+        <ion-button size="small" (click)="Hideme()">ترجمة</ion-button>
 
       </ion-card-content>
+      </ion-card>
+
+      <ion-card *ngIf="hideMe">
+        <ion-card-header>
+          <h5>:ملاحظات مهمة </h5>
+        </ion-card-header>
+  
+        <ion-card-content>
+          <ion-text class="wordwrap">:عندما تقوم بالوصف باستخدام الصيغة "أ إلى ب، سعر سيارات تويوتا _______ (فعل) " لا تقم باستخدام الفعل بزمن المضارع البسيط، مثال     </ion-text><br/>
+          <br/>
+          <ion-text class="wordwrap">.من الإثنين إلى الثلاثاء، اسعار سيارات تويوتا يرتفع </ion-text><br/>
+          <br/>
+          <ion-text class="wordwrap">   :بل يجب عليك استخدام زمن الماضي البسيط عندما تقوم بوصف فعل  حدث في الماضي وانتهى، مثال      </ion-text><br/>
+          <br/>
+          <ion-text class="wordwrap">     من الإثنين إلى الثلاثاء، أسعار سيارات تويوتا إرتفع. (إرتفع هي ماضي يرتفع) </ion-text>
+          <br/><br/>
+        </ion-card-content>
       </ion-card>
 
   
@@ -55,8 +73,9 @@
       <ion-text class="wordwrap">3.) Talk about the changes occurring between periods of time 
           (ex: From 2011 to 2012 Toyoto cars rose in price from 13,000$ to 14,000$, From 2012 to 2013 etc...)</ion-text><br/>
       <ion-text class="wordwrap">4.) Finish your explanation by making a conclusion about the graph.
-            (ex: In conclusion, Toyota cars are volatile in price at a maximum of 16,000$ to a minimum of 5,000$)</ion-text><br/><br/>
-            <!--ion-button size="small" (click)="Hideme()">Translation</ion-button-->
+            (ex: In conclusion, Toyota cars are volatile in price at a maximum of 16,000$ to a minimum of 5,000$)</ion-text>
+            <br/><br/>
+            <ion-button size="small" (click)="Hideme()">ترجمة</ion-button>
       </ion-card-content>
     </ion-card>
 
@@ -79,7 +98,7 @@
 
     <ion-card>
       <ion-card-header>
-        <!----ion-card-subtitle>Regular HTML block</ion-card-subtitle-->
+        <ion-card-subtitle>Regular HTML block</ion-card-subtitle>
         <ion-text color="primary"><h5>Example of how to describe a Line Graph: What is the price of Apples over time?</h5></ion-text>
       </ion-card-header>
       <img src="/assets/imgs/linegraphex1.png" alt="" />
@@ -104,6 +123,7 @@
               From tuesday to wednesday it stayed at 2 dollars.
               From wednesday to thursday it went up from 2 to 3 dollars.
               Finally from thursday to friday it fell from 3 to 2 dollars.
+
         
        
       </ion-text>
@@ -136,8 +156,8 @@
         <ion-text class="wordwrap">3.) Talk first about the biggest item on the pie chart (ex: Toyota cars are the biggest at 75%)</ion-text><br/>
         <ion-text class="wordwrap">4.) Talk in descending order about the other items on the pie chart (ex: Next Honda is at 20%. Finally Hyundai the smallest is at 5%)</ion-text><br/>
         <ion-text class="wordwrap">5.) Finish your explanation by making a conclusion or short summary about the chart.
-            (ex: In conclusion, Toyota cars are the most popular and Hyundai cars are the least popular) </ion-text> <br/><br/>
-        <!--ion-button size="small" (click)="Hideme()">Translation</ion-button-->
+            (ex: In conclusion, Toyota cars are the most popular and Hyundai cars are the least popular, while Ford is more popular than Hyundai and less popular than Toyota) </ion-text> <br/><br/>
+        <ion-button size="small" (click)="Hideme()">ترجمة</ion-button>
         </ion-card-content>
       </ion-card>
 
@@ -216,6 +236,29 @@
           <ion-text class="wordwrap">The second type of bar graph <ion-text color="dark">Type B</ion-text> is similar to that of a line-graph by plotting the variation of data in a set of members of the graph over a specified
               period of time. This type of graph is commonly used to show the trend of an item or items through the use of bars instead of lines over a duration of time. For this type of bar-graph you would describe it like a line-graph.</ion-text><br/><br/>
           <img src="/assets/imgs/bar-graphB.png" alt="" />
+          <ion-button size="small" (click)="Hideme()">ترجمة</ion-button>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card *ngIf="hideMe">
+        <ion-card-header>
+          <h5>How to describe a Bar graph:</h5>
+        </ion-card-header>
+  
+        <ion-card-content>
+          
+          <ion-text class="wordwrap">،أشرطة الرسم البياني لها نوعان، النوع الأول لأشرطة الرسم البياني (نوع أ) يحتوي معلومات أو بيانات تشابه تلك التي توجد في الرسوم</ion-text><br/>
+          <ion-text class="wordwrap">البيانية الدائرية، لكنها لا تستعمل النسبة المئوية لمقارنة كميتين أو عنصرين ببعضهما البعض</ion-text><br/>
+          <ion-text class="wordwrap">  .بل  غالبا ما يتم استعمال هذا النوع من الرسوم البيانية للقيام بمقارنات بين عناصر متختلفة عن</ion-text><br/>
+          <ion-text class="wordwrap"> طريق عرض قيم البيانات شكليا مقابل بعضها البعض</ion-text><br/>
+          <img src="/assets/imgs/bar-graphA.png" alt="" />
+          <br/>
+          <ion-text class="wordwrap"> النوع الثاني للرسوم البيانية الشريطية (نوع ب) يشابه للرسوم البيناية الخطية حيث أنه يقوم بتخطيط البيانات المختلفة للقيم </ion-text>
+          <ion-text class="wordwrap">مضمونة داخل الرسم البياني على مدار مدة من الزمن، هذا النوع من الرسوم البيانية شائع الإستخدام لإظهار</ion-text>
+          <ion-text class="wordwrap">  .غالبية عنصر أو مجموعة عناصر على بقية عناصر الرسم البياني عن طريق استخدام الأشرطة خلال فترة زمنية</ion-text>
+          <br/>
+          <img src="/assets/imgs/bar-graphB.png" alt="" />
+          <br/>
         </ion-card-content>
       </ion-card>
   
