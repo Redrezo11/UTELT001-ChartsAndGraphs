@@ -19,35 +19,35 @@ export class AppComponent {
     {
       title: 'Pie Chart Exercises',
       url: '/list',
-      icon: 'list'
+      icon: 'radio-button-off'
     },
 
     {
       title: 'Line Graph Exercises',
       url: '/linegraph',
-      icon: 'list'
+      icon: 'trending-up'
     },
     {
       title: 'Templates',
       url: '/templates',
-      icon: 'list'
+      icon: 'albums'
     },
 
     {
       title: 'Comparitives',
       url: '/comparative',
-      icon: 'list'
+      icon: 'stats'
     },
 
     {
       title: 'Graph Compare',
       url: '/graphcompare',
-      icon: 'list'
+      icon: 'stats'
     },
     {
       title: 'Resources',
       url: '/resources',
-      icon: 'list'
+      icon: 'book'
     }
     
 
